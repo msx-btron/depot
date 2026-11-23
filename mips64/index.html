@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MIPS Malta | B-System</title>
+  <meta name="description" content="make mips builds the MIPS Malta bare-metal kernel.">
+  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../ricepaper.css">
+</head>
+<body>
+  <nav class="sticky" aria-label="Site navigation">
+  <div class="nav-container">
+    <a href="https://btron.pro/index.html" class="logo"><img width="48" src="https://n2o.dev/img/synrc.svg" alt="Synrc"></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.nav-links').classList.toggle('open'); this.classList.toggle('open');">
+      <span class="hamburger"></span>
+    </button>
+    <ul class="nav-links">
+<li><a href="https://btron.pro/index.html">System</a></li>
+<li><a href="https://btron.pro/apps/index.html">Applications</a></li>
+<li><a href="https://btron.pro/devices/index.html">Devices</a></li>
+<li><a href="https://btron.pro/doc/index.html">Books</a></li>
+<li><a href="../index.html" class="active">Downloads</a></li>
+</ul>
+  </div>
+</nav>
+  <header class="rice-hero">
+    <p class="rice-kicker">Downloads · MIPS Malta</p>
+    <h1>MIPS Malta</h1>
+    <div class="rice-rule"></div>
+    <p class="rice-lede"><code>make mips</code> builds the MIPS Malta bare-metal kernel (<code>make run-mips</code> on QEMU <code>malta</code>).</p>
+  </header>
+  <main class="rice-main">
+    <p class="rice-section-label">Technical Characteristics of the Computer/Console</p>
+    <table class="rice-table">
+      <tbody>
+        <tr><th>Chipset</th><td>MIPS32 24Kf / MIPS64 Malta Core LV (little-endian, <code>src/cores/core_mips.c</code>, T-Kernel 2.0)</td></tr>
+        <tr><th>Bus</th><td>Galileo GT-64120 System Controller, PCI / Intel 82371EB PIIX4 Southbridge, ISA</td></tr>
+        <tr><th>Video</th><td>PCI VGA / Bochs linear framebuffer (<code>src/drivers/mips/</code>)</td></tr>
+        <tr><th>Display</th><td>800×600 / 1024×768 @ 32-bpp ARGB; serial console &amp; B-System shell</td></tr>
+        <tr><th>Sound</th><td>PIIX4 / AC'97 / PC speaker</td></tr>
+        <tr><th>Input</th><td>i8042 PS/2 keyboard &amp; mouse, 16550A UART serial</td></tr>
+        <tr><th>Memory</th><td>256 MB SDRAM (KSEG0 direct-mapped kernel space under QEMU <code>malta</code>)</td></tr>
+        <tr><th>Communications</th><td>16550A NS16550 UART serial console (COM1), AMD PCnet PCI Ethernet</td></tr>
+      </tbody>
+    </table>
+
+    <p class="rice-section-label">Firmware and Images to Download</p>
+    <table class="rice-table">
+      <tbody>
+        <tr>
+          <th>BIN</th>
+          <td>
+            <ul class="rice-dl-list">
+              <li><a href="btron-mips.elf">btron-mips.elf</a><span class="rice-dl-note"><code>make mips</code> — MIPS Malta bare-metal ELF (<code>make run-mips</code>)</span></li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th>VOL</th>
+          <td>
+            <ul class="rice-dl-list">
+              <li><a href="../btron_sys.vol">btron_sys.vol</a><span class="rice-dl-note"><code>make btron_sys.vol</code> — BTRON /SYS volume</span></li>
+              <li><a href="../btron_anders.vol">btron_anders.vol</a><span class="rice-dl-note"><code>make btron_anders.vol</code> — BTRON /ANDERS volume</span></li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+  <footer>
+    <div class="footer-bottom">
+      <a href="../sakazaki.svg" title="Sakazaki Clan Kamon — 二蓋笠 (Nigai-gasa)" style="display: inline-block; text-decoration: none; margin-bottom: 0.2rem;">
+        <img src="../sakazaki.svg" alt="Sakazaki Order Logo" style="width: 108px; height: auto; display: block; opacity: 0.88;">
+      </a>
+      <div class="footer-legal">
+        <p style="margin: 0 0 0.85rem; font-weight: 500; letter-spacing: 0.04em; color: #b8c0c8; font-size: 0.81rem;">
+          &copy; 2026 Cryptographic Telesystems, LLC. Ukraine. All rights reserved.
+        </p>
+        <p style="margin: 0 0 0.9rem; line-height: 1.75;">
+          <b>TRADEMARK &amp; STATUTORY COMPLIANCE DISCLOSURE:</b> TRON, BTRON, ITRON, T-Kernel, and T-Engine are registered trademarks or trademarks of TRON Forum and Professor Ken Sakamura. MIPS&reg; and Malta&trade; are trademarks or registered trademarks of MIPS Tech, LLC. Intel&reg; is a registered trademark of Intel Corporation. All other manufacturer designations and silicon architectures cited on this page are the property of their respective trademark holders and are referenced strictly under statutory fair use doctrine for non-commercial hardware documentation and cleanroom interoperability engineering. B-System contains no proprietary vendor firmware ROMs, microcode, or copyrighted assets.
+        </p>
+        <p style="margin: 0; line-height: 1.75; color: #69747e; font-size: 0.74rem;">
+          btron.pro &nbsp;&middot;&nbsp; MIPS Malta (MIPS32 / MIPS64) &nbsp;&middot;&nbsp; Under ISC / DHARMA License &nbsp;&middot;&nbsp; Conforming to NASA/JPL Power of Ten Rules
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

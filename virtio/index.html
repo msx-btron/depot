@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VirtIO | B-System</title>
+  <meta name="description" content="make posix, make qemu, and make sakamura build the VirtIO, hosted POSIX, and T-Kernel 2.0 kernels.">
+  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../ricepaper.css">
+</head>
+<body>
+  <nav class="sticky" aria-label="Site navigation">
+  <div class="nav-container">
+    <a href="https://btron.pro/index.html" class="logo"><img width="48" src="https://n2o.dev/img/synrc.svg" alt="Synrc"></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.nav-links').classList.toggle('open'); this.classList.toggle('open');">
+      <span class="hamburger"></span>
+    </button>
+    <ul class="nav-links">
+<li><a href="https://btron.pro/index.html">System</a></li>
+<li><a href="https://btron.pro/apps/index.html">Applications</a></li>
+<li><a href="https://btron.pro/devices/index.html">Devices</a></li>
+<li><a href="https://btron.pro/doc/index.html">Books</a></li>
+<li><a href="../index.html" class="active">Downloads</a></li>
+</ul>
+  </div>
+</nav>
+  <header class="rice-hero">
+    <p class="rice-kicker">Downloads · VirtIO / POSIX / QEMU / T-Kernel 2.0</p>
+    <h1>VirtIO</h1>
+    <div class="rice-rule"></div>
+    <p class="rice-lede"><code>make posix</code>, <code>make qemu</code>, and <code>make sakamura</code> build the hosted POSIX, VirtIO/QEMU, and Sakamura T-Kernel 2.0 kernels.</p>
+  </header>
+  <main class="rice-main">
+    <p class="rice-section-label">Technical Characteristics of the Computer/Console</p>
+    <table class="rice-table">
+      <tbody>
+        <tr><th>Chipset</th><td>Hosted POSIX / QEMU VirtIO / T-Kernel 2.0 Sakamura (<code>src/cores/core_posix.c</code>, <code>src/cores/core_virtio.c</code>, <code>src/cores/core_tkernel.c</code>)</td></tr>
+        <tr><th>Bus</th><td>VirtIO-PCI / VirtIO-MMIO (<code>src/drivers/virtio/</code>), host file-backed block devices</td></tr>
+        <tr><th>Video</th><td>SDL2 / VirtIO-GPU 2D linear framebuffer, TinyGL 3D rasterizer</td></tr>
+        <tr><th>Display</th><td>1024×768 / 1280×1024 @ 32-bpp ARGB; B-System Workstation &amp; LAPTOP shell</td></tr>
+        <tr><th>Sound</th><td>SDL2 PCM / VirtIO-Sound stereo audio, Orchestra synthesizer</td></tr>
+        <tr><th>Input</th><td>SDL2 / VirtIO-Input keyboard &amp; mouse, POSIX terminal TTY</td></tr>
+        <tr><th>Memory</th><td>Hosted virtual address space / 256 MB–1 GB QEMU RAM</td></tr>
+        <tr><th>Communications</th><td>VirtIO-Net Ethernet, host POSIX sockets, 16550A / stdio serial console</td></tr>
+      </tbody>
+    </table>
+
+    <p class="rice-section-label">Firmware and Images to Download</p>
+    <table class="rice-table">
+      <tbody>
+        <tr>
+          <th>BIN</th>
+          <td>
+            <ul class="rice-dl-list">
+              <li><a href="btron-posix">btron-posix</a><span class="rice-dl-note"><code>make posix</code> — hosted POSIX workstation executable</span></li>
+              <li><a href="btron-qemu.elf">btron-qemu.elf</a><span class="rice-dl-note"><code>make qemu</code> — VirtIO / QEMU workstation kernel</span></li>
+              <li><a href="btron-sakamura.elf">btron-sakamura.elf</a><span class="rice-dl-note"><code>make sakamura</code> — T-Kernel 2.0 Sakamura kernel</span></li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th>VOL</th>
+          <td>
+            <ul class="rice-dl-list">
+              <li><a href="../btron_sys.vol">btron_sys.vol</a><span class="rice-dl-note"><code>make btron_sys.vol</code> — BTRON /SYS volume</span></li>
+              <li><a href="../btron_anders.vol">btron_anders.vol</a><span class="rice-dl-note"><code>make btron_anders.vol</code> — BTRON /ANDERS volume</span></li>
+              <li><a href="../btron_msx.vol">btron_msx.vol</a><span class="rice-dl-note"><code>make btron_msx.vol</code> — BTRON /MSX volume</span></li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th>DSK</th>
+          <td>
+            <ul class="rice-dl-list">
+              <li><a href="../intel-uefi/btron_disk.img">btron_disk.img</a><span class="rice-dl-note"><code>make btron_disk.img</code> — unified MBR multi-partition disk image</span></li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+  <footer>
+    <div class="footer-bottom">
+      <a href="../sakazaki.svg" title="Sakazaki Clan Kamon — 二蓋笠 (Nigai-gasa)" style="display: inline-block; text-decoration: none; margin-bottom: 0.2rem;">
+        <img src="../sakazaki.svg" alt="Sakazaki Order Logo" style="width: 108px; height: auto; display: block; opacity: 0.88;">
+      </a>
+      <div class="footer-legal">
+        <p style="margin: 0 0 0.85rem; font-weight: 500; letter-spacing: 0.04em; color: #b8c0c8; font-size: 0.81rem;">
+          &copy; 2026 Cryptographic Telesystems, LLC. Ukraine. All rights reserved.
+        </p>
+        <p style="margin: 0 0 0.9rem; line-height: 1.75;">
+          <b>TRADEMARK &amp; STATUTORY COMPLIANCE DISCLOSURE:</b> TRON, BTRON, ITRON, T-Kernel, and T-Engine are registered trademarks or trademarks of TRON Forum and Professor Ken Sakamura. POSIX&reg; is a registered trademark of The IEEE. VirtIO&trade; is a specification of OASIS Open. All other manufacturer designations and silicon architectures cited on this page are the property of their respective trademark holders and are referenced strictly under statutory fair use doctrine for non-commercial hardware documentation and cleanroom interoperability engineering. B-System contains no proprietary vendor firmware ROMs, microcode, or copyrighted assets.
+        </p>
+        <p style="margin: 0; line-height: 1.75; color: #69747e; font-size: 0.74rem;">
+          btron.pro &nbsp;&middot;&nbsp; VirtIO / POSIX / QEMU / T-Kernel 2.0 &nbsp;&middot;&nbsp; Under ISC / DHARMA License &nbsp;&middot;&nbsp; Conforming to NASA/JPL Power of Ten Rules
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
