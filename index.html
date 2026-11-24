@@ -1,56 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Downloads | B-System</title>
+  <title>ダウンロード — Downloads | B-System</title>
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="ricepaper.css">
 </head>
 <body>
   <nav class="sticky" aria-label="Site navigation">
-  <div class="nav-container">
-    <a href="https://btron.pro/index.html" class="logo"><img width="48" src="https://n2o.dev/img/synrc.svg" alt="Synrc"></a>
-    <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.nav-links').classList.toggle('open'); this.classList.toggle('open');">
-      <span class="hamburger"></span>
-    </button>
-    <ul class="nav-links">
-<li><a href="https://btron.pro/index.html">System</a></li>
-<li><a href="https://btron.pro/apps/index.html">Applications</a></li>
-<li><a href="https://btron.pro/devices/index.html">Devices</a></li>
-<li><a href="https://btron.pro/doc/index.html">Books</a></li>
-<li><a href="index.html" class="active">Downloads</a></li>
-</ul>
-  </div>
-</nav>
+    <div class="nav-container">
+      <a href="https://btron.pro/index.html" class="logo"><img width="48" src="https://n2o.dev/img/synrc.svg" alt="Synrc"></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.nav-links').classList.toggle('open'); this.classList.toggle('open');">
+        <span class="hamburger"></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="https://btron.pro/index.html">System</a></li>
+        <li><a href="https://btron.pro/apps/index.html">Applications</a></li>
+        <li><a href="https://btron.pro/devices/index.html">Devices</a></li>
+        <li><a href="https://btron.pro/doc/index.html">Books</a></li>
+        <li><a href="index.html" class="active">Downloads</a></li>
+      </ul>
+    </div>
+  </nav>
+
   <header class="rice-hero">
-    <p class="rice-kicker">Images and firmware</p>
-    <h1>Downloads</h1>
+    <p class="rice-kicker">B-System · BTRON 3.20 · Downloads</p>
+    <h1 class="jp-title">ダウンロード。</h1>
     <div class="rice-rule"></div>
-    <p class="rice-lede">Machine images built from this tree. A page names the make target when the tree has one.</p>
+    <p class="rice-lede">単一のクリーンルーム C99 ソースツリーから生成された実機イメージ、ファームウェア、および標準 B-FS ボリューム群。</p>
+    <p class="rice-lede" style="font-size:0.94rem; opacity:0.82; margin-top:0.85rem;">Machine images, bare-metal firmware, and BTRON volumes built from this tree. Each target page names its exact Makefile rule.</p>
   </header>
+
   <main class="rice-main">
     <p class="rice-section-label">Machines</p>
-<div class="rice-grid">
-<a class="rice-card" href="pi-500/index.html"><strong>Pi 500</strong><span>Raspberry Pi 5 class, BCM2712 framebuffer.</span></a>
-<a class="rice-card" href="pi-400/index.html"><strong>Pi 400</strong><span>make pi400 builds btron-pi400.img.</span></a>
-<a class="rice-card" href="pi-3/index.html"><strong>Pi 3</strong><span>Broadcom ARM port.</span></a>
-<a class="rice-card" href="pi-2/index.html"><strong>Pi 2</strong><span>Broadcom ARM port.</span></a>
-<a class="rice-card" href="uconsole/index.html"><strong>uConsole</strong><span>Clockwork handheld, Pi-class board.</span></a>
-<a class="rice-card" href="picocalc/index.html"><strong>PicoCalc</strong><span>UF2 images for RP2040 and RP2350.</span></a>
-<a class="rice-card" href="playstation-2/index.html"><strong>PlayStation 2</strong><span>make ps2 builds the ISO.</span></a>
-<a class="rice-card" href="quadra-800/index.html"><strong>Quadra 800</strong><span>make m68k, Macintosh Quadra.</span></a>
-<a class="rice-card" href="pc98/index.html"><strong>PC-98</strong><span>make pc98.</span></a>
-<a class="rice-card" href="intel-uefi/index.html"><strong>Intel UEFI</strong><span>make uefi, btron_disk.img.</span></a>
-<a class="rice-card" href="virtio/index.html"><strong>VirtIO</strong><span>make posix, qemu, sakamura.</span></a>
-<a class="rice-card" href="mips64/index.html"><strong>MIPS Malta</strong><span>make mips, QEMU malta.</span></a>
-</div>
+    <div class="rice-grid">
+      <a class="rice-card" href="pi-500/index.html"><strong>Pi 500</strong><span>Raspberry Pi 5 class, BCM2712 framebuffer.</span></a>
+      <a class="rice-card" href="pi-400/index.html"><strong>Pi 400</strong><span>make pi400 builds btron-pi400.img.</span></a>
+      <a class="rice-card" href="pi-3/index.html"><strong>Pi 3</strong><span>Broadcom ARM port.</span></a>
+      <a class="rice-card" href="pi-2/index.html"><strong>Pi 2</strong><span>Broadcom ARM port.</span></a>
+      <a class="rice-card" href="uconsole/index.html"><strong>uConsole</strong><span>Clockwork handheld, Pi-class board.</span></a>
+      <a class="rice-card" href="picocalc/index.html"><strong>PicoCalc</strong><span>UF2 images for RP2040 and RP2350.</span></a>
+      <a class="rice-card" href="playstation-2/index.html"><strong>PlayStation 2</strong><span>make ps2 builds the ISO.</span></a>
+      <a class="rice-card" href="quadra-800/index.html"><strong>Quadra 800</strong><span>make m68k, Macintosh Quadra.</span></a>
+      <a class="rice-card" href="pc98/index.html"><strong>PC-98</strong><span>make pc98.</span></a>
+      <a class="rice-card" href="intel-uefi/index.html"><strong>Intel UEFI</strong><span>make uefi, btron_disk.img.</span></a>
+      <a class="rice-card" href="virtio/index.html"><strong>VirtIO</strong><span>make posix, qemu, sakamura.</span></a>
+      <a class="rice-card" href="mips64/index.html"><strong>MIPS Malta</strong><span>make mips, QEMU malta.</span></a>
+    </div>
     <p class="rice-section-label">Volumes</p>
-<div class="rice-grid">
-<a class="rice-card" href="btron_sys.vol"><strong>btron_sys.vol</strong><span>make btron_sys.vol — BTRON /SYS volume.</span></a>
-<a class="rice-card" href="btron_anders.vol"><strong>btron_anders.vol</strong><span>make btron_anders.vol — BTRON /ANDERS volume.</span></a>
-<a class="rice-card" href="btron_msx.vol"><strong>btron_msx.vol</strong><span>make btron_msx.vol — BTRON /MSX volume.</span></a>
-</div>
+    <div class="rice-grid">
+      <a class="rice-card" href="btron_sys.vol"><strong>btron_sys.vol</strong><span>make btron_sys.vol — BTRON /SYS volume.</span></a>
+      <a class="rice-card" href="btron_anders.vol"><strong>btron_anders.vol</strong><span>make btron_anders.vol — BTRON /ANDERS volume.</span></a>
+      <a class="rice-card" href="btron_msx.vol"><strong>btron_msx.vol</strong><span>make btron_msx.vol — BTRON /MSX volume.</span></a>
+    </div>
   </main>
+
+  <footer>
+    <div class="footer-bottom">
+      <a href="sakazaki.svg" title="Sakazaki Clan Kamon — 二蓋笠 (Nigai-gasa)" style="display: inline-block; text-decoration: none; margin-bottom: 0.2rem;">
+        <img src="sakazaki.svg" alt="Sakazaki Order Logo" style="width: 108px; height: auto; display: block; opacity: 0.88;">
+      </a>
+      <div class="footer-legal">
+        <p style="margin: 0 0 0.85rem; font-weight: 500; letter-spacing: 0.04em; color: #b8c0c8; font-size: 0.81rem;">
+          &copy; 2026 Cryptographic Telesystems, LLC. Ukraine. All rights reserved.
+        </p>
+        <p style="margin: 0 0 0.9rem; line-height: 1.75;">
+          <b>TRADEMARK &amp; STATUTORY COMPLIANCE DISCLOSURE:</b> TRON, BTRON, ITRON, T-Kernel, and T-Engine are registered trademarks or trademarks of TRON Forum and Professor Ken Sakamura. Cho-Kanji (超漢字), B-right/V, and PMC are registered trademarks of Personal Media Corporation. Raspberry Pi&reg;, Raspberry Pi 2, Raspberry Pi 3, Raspberry Pi 400, Raspberry Pi 500, Compute Module 4, RP2040, RP2350, and RP1 are trademarks of Raspberry Pi Ltd. Broadcom&reg; and VideoCore&reg; are registered trademarks or trademarks of Broadcom Inc. ClockworkPi&reg;, uConsole&trade;, and PicoCalc&trade; are trademarks of Clockwork Tech LLC. SONY&reg;, PlayStation&reg;, PS2&reg;, Emotion Engine&reg; (EE), Graphics Synthesizer&reg; (GS), and DualShock&reg; are registered trademarks or trademarks of Sony Group Corporation / Sony Interactive Entertainment Inc. Apple&reg;, Macintosh&reg;, Quadra&reg;, Mac OS&reg;, and NuBus&trade; are registered trademarks or trademarks of Apple Inc. Motorola&reg; and 68040 are trademarks of Motorola Trademark Holdings, LLC / NXP Semiconductors. NEC&reg;, PC-9801&reg;, and PC-9821&reg; are registered trademarks of NEC Corporation. Yamaha&reg; is a registered trademark of Yamaha Corporation. Intel&reg;, i386&trade;, i486&trade;, and Pentium&reg; are registered trademarks or trademarks of Intel Corporation. MIPS&reg;, MIPS32&reg;, MIPS64&reg;, and Malta&trade; are registered trademarks or trademarks of MIPS Technologies, Inc. ARM&reg; and Cortex&reg; are registered trademarks of Arm Limited. STM32&reg; is a registered trademark of STMicroelectronics. MSX&trade;, MSX2&reg;, MSX2+&reg;, and MSX turbo R&reg; are registered trademarks of MSX Licensing Corporation and ASCII Corporation. Quake&reg; is a registered trademark of id Software LLC / ZeniMax Media Inc. / Microsoft Corporation. Microsoft&reg;, MS-DOS&reg;, and Windows&reg; are registered trademarks of Microsoft Corporation. UEFI&reg; and ACPI&trade; are registered trademarks or trademarks of UEFI Forum, Inc. VirtIO&trade; is a trademark of OASIS Open. PCI&reg; and PCIe&reg; are registered trademarks of PCI-SIG. VESA&reg; is a registered trademark of Video Electronics Standards Association. HDMI&reg; is a registered trademark of HDMI Licensing Administrator, Inc. POSIX&reg; is a registered trademark of IEEE. All other manufacturer designations, silicon architectures, and software titles cited within this depot are the property of their respective trademark holders and are referenced strictly under statutory fair use doctrine for non-commercial historical preservation, register-level hardware documentation, and cleanroom interoperability engineering. B-System images contain no proprietary vendor microcode, firmware ROMs, or copyrighted assets.
+        </p>
+        <p style="margin: 0; line-height: 1.75; color: #69747e; font-size: 0.74rem;">
+          depot.btron.pro &nbsp;·&nbsp; btron.pro &nbsp;·&nbsp; High-Assurance VirtIO Hypervisor &amp; BTRON 3.20 Architecture &nbsp;·&nbsp; Under ISC / DHARMA License &nbsp;·&nbsp; Conforming to NASA/JPL Power of Ten Rules
+        </p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
